@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/svg+xml" href="fotos/logo-svg1.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="fotos/logo-svg1.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="fotos/logo-svg1.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano's Pizzería | La Mejor Pizza Chicago en Irapuato</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="pizza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+ <body>
+
+    <!-- NAVBAR FLOTANTE CON NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="fotos/logo-svg1.svg" alt="Luciano's Logo" style="width: 50px; height: 35px; vertical-align: middle;"> Luciano's
+
+            </a>
+            <ul class="nav-links">
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#crea-tu-pizza">Arma tu Pizza</a></li>
+                <li><a href="#pastas-ensaladas">Pastas & Ensaladas</a></li>
+                <li><a href="#pedidos-especiales">Especiales</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="https://wa.me/524626265583?text=Hola,%20quisiera%20ordenar" class="nav-btn-order"><i class="fab fa-whatsapp"></i> Pedir Ahora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-badge">
+            <i class="fas fa-star"></i> 4.5 Stars en Google (+550 Opiniones)
+        </div>
+        <h1>Luciano's Pizzería</h1>
+        <p>La auténtica experiencia de la <strong>Stuffed Pizza Chicago Style</strong> en Irapuato. Masa crujiente, queso derretido en abundancia e ingredientes de la mejor calidad.</p>
+        <div class="hero-cta">
+            <a href="https://wa.me/524621086750?text=Hola!%20Me%20gustaría%20hacer%20un%20pedido" target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+            <a href="tel:+524621086750" class="btn btn-call">
+                <i class="fas fa-phone-alt"></i> Llamar Directo
+            </a>
+        </div>
+    </header>
+
+    <!-- video de fondo opcional -->
+
+   <section class="tarjeta-hero">
+  <!-- Columna Izquierda: Video -->
+  <div class="video-container">
+    <video   controls autoplay loop playsinline>
+      <source src="videos/Local.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Columna Derecha: Texto descriptivo -->
+  <div class="info-container">
+    <span class="etiqueta-tag">EXCELENTE CALIDAD</span>
+    <h2 class="titulo-principal">Luciano's Pizza</h2>
+    <p class="descripcion-animada" id="frase-dinamica">
+      Cada pizza es una oportunidad para disfrutar, compartir y crear momentos inolvidables alrededor de la mesa.
+    </p>
+  </div>
+  <script src="script.js"></script>
+</section>
+
+
+
+    <!-- NAVEGACIÓN RÁPIDA DE MENÚ (MENÚ CATEGORÍAS) -->
+    <section class="category-nav">
+        <div class="category-grid">
+            <a href="#especialidades" class="cat-card">
+                <i class="fas fa-crown"></i>
+                <span>Especialidades</span>
+            </a>
+            <a href="#crea-tu-pizza" class="cat-card">
+                <i class="fas fa-tools"></i>
+                <span>Crea tu Pizza</span>
+            </a>
+            <a href="#pastas-ensaladas" class="cat-card">
+                <i class="fas fa-utensils"></i>
+                <span>Pastas & Ensaladas</span>
+            </a>
+            <a href="#pedidos-especiales" class="cat-card">
+                <i class="fas fa-heart"></i>
+                <span>Pedidos Especiales</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 1: ESPECIALIDADES DE LA CASA -->
+    <section id="especialidades" class="container">
+        <div class="section-header">
+            <span>Menú Principal</span>
+            <h2>Nuestras Especialidades</h2>
+            <p>Disponibles en Estilo Chicago (Stuffed) y Thin Crust (Delgada)</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Pizza Especial -->
+            <div class="menu-card">
+                <img src="fotos/especial1.png" alt="Pizza Especial">
+                <div class="menu-card-body">
+                    <h3>Pizza Especial</h3>
+                    <p>Carne, champiñón, pimiento verde, cebollitas y mucho queso mozzarella.</p>
+                    <div class="price-list">
+                        <span>M: $350</span>
+                        <span>G: $410</span>
+                        <span>EX: $510</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Vegetariana -->
+            <div class="menu-card">
+                <img src="fotos/vegetariana.png" alt="Pizza Vegetariana">
+                <div class="menu-card-body">
+                    <h3>Pizza Vegetariana</h3>
+                    <p>Champiñón, pimiento verde, cebollitas y queso. Opción saludable y llena de sabor.</p>
+                    <div class="price-list">
+                        <span>M: $340</span>
+                        <span>G: $395</span>
+                        <span>EX: $490</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Mexicana -->
+            <div class="menu-card">
+                <img src="fotos/mexicana.png" alt="Pizza Mexicana">
+                <div class="menu-card-body">
+                    <h3>Pizza Mexicana</h3>
+                    <p>Chorizo, jalapeño, jitomate, cebollitas y una mezcla perfecta de quesos.</p>
+                    <div class="price-list">
+                        <span>M: $350</span>
+                        <span>G: $410</span>
+                        <span>EX: $510</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Luciano's -->
+            <div class="menu-card">
+                <img src="fotos/luciano.png" alt="Pizza Luciano's">
+                <div class="menu-card-body">
+                    <h3>Pizza Luciano's</h3>
+                    <p>Peperoni, aceituna negra y cebollitas. La receta insigne de la casa.</p>
+                    <div class="price-list">
+                        <span>M: $340</span>
+                        <span>G: $395</span>
+                        <span>EX: $490</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Original -->
+            <div class="menu-card">
+                <img src="fotos/original.png" alt="Pizza Original">
+                <div class="menu-card-body">
+                    <h3>Pizza Original</h3>
+                    <p>Carne, jamón, salami y abundancia de queso estilo Chicago.</p>
+                    <div class="price-list">
+                        <span>M: $340</span>
+                        <span>G: $395</span>
+                        <span>EX: $490</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Hawaiana -->
+            <div class="menu-card">
+                <img src="fotos/hawaiana.png" alt="Pizza Hawaiana">
+                <div class="menu-card-body">
+                    <h3>Pizza Hawaiana</h3>
+                    <p>Jamón, piña de la casa y abundante queso derretido.</p>
+                    <div class="price-list">
+                        <span>M: $330</span>
+                        <span>G: $380</span>
+                        <span>EX: $470</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: CREA TU PIZZA A TU GUSTO -->
+    <section id="crea-tu-pizza" class="container">
+        <div class="section-header">
+            <span>Personalización</span>
+            <h2>¡Crea Tu Pizza a Tu Gusto!</h2>
+            <p>Diseña tu pizza ideal combinando tus ingredientes favoritos</p>
+        </div>
+
+        <div class="builder-section">
+            <div class="builder-steps">
+                <!-- Paso 1 & 2 & 3 -->
+                <div class="step-box">
+                    <h4><i class="fas fa-layer-group"></i> 1, 2 y 3. Elige Tamaño y Estilo</h4>
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Tamaño</th>
+                                <th>Chicago</th>
+                                <th>Thin Crust</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mediana (28 cm)</td>
+                                <td><strong>$310</strong></td>
+                                <td><strong>$120</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Grande (32 cm)</td>
+                                <td><strong>$350</strong></td>
+                                <td><strong>$140</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Extra Grande (37 cm)</td>
+                                <td><strong>$430</strong></td>
+                                <td><strong>$170</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Jumbo (40 cm)</td>
+                                <td>-</td>
+                                <td><strong>$210</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="step-box">
+                    <h4><i class="fas fa-pepper-hot"></i> 4. Elige tus Ingredientes</h4>
+                    <p style="font-size: 0.85rem; color: #666; margin-bottom: 8px;">Selecciona entre nuestra variedad de toppings frescos:</p>
+                    <div class="ingredients-tags">
+                        <span class="tag">Peperoni</span>
+                        <span class="tag">Salchicha</span>
+                        <span class="tag">Salami</span>
+                        <span class="tag">Jamón</span>
+                        <span class="tag">Carne Molida</span>
+                        <span class="tag">Atún</span>
+                        <span class="tag">Piña</span>
+                        <span class="tag">Champiñón</span>
+                        <span class="tag">Pimiento Verde</span>
+                        <span class="tag">Cebollitas</span>
+                        <span class="tag">Aceituna Negra</span>
+                        <span class="tag">Espinacas</span>
+                        <span class="tag">Jitomate</span>
+                        <span class="tag">Chorizo</span>
+                    </div>
+                </div>
+
+                <!-- Extras -->
+                <div class="step-box">
+                    <h4><i class="fas fa-plus-circle"></i> Costos Extra por Ingrediente</h4>
+                    <table class="price-table">
+                        <tbody>
+                            <tr>
+                                <td>Ingrediente Extra (M/G/EX/J)</td>
+                                <td><strong>$10 / $15 / $20 / $25</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Extra Queso (M/G/EX/J)</td>
+                                <td><strong>$30 / $40 / $50 / $60</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="https://wa.me/524621086750?text=Hola,%20quiero%20armar%20mi%20pizza%20personalizada" target="_blank" class="btn btn-whatsapp" style="width: 100%; margin-top: 15px; justify-content: center;">
+                        <i class="fab fa-whatsapp"></i> Armar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: PASTAS, ENSALADAS Y PEDIDOS ESPECIALES -->
+   <section class="container" style="padding-top: 0;">
+  <div class="extra-grid">
+    
+    <!-- Pastas -->
+    <div id="pastas-ensaladas" class="extra-card">
+      <h3><i class="fas fa-bowl-rice"></i> Pastas</h3>
+      
+      <div class="menu-item">
+        <img src="ingredientes/bolognesa.png" alt="A la Bolognese" class="item-img">
+        <div class="item-info">
+          <h5>A la Bolognese</h5>
+          <p>Spaghetti, salsa especial de la casa, carne molida y parmesano.</p>
+        </div>
+        <div class="item-price">$150</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ingredientes/burro.png" alt="Al Burro" class="item-img">
+        <div class="item-info">
+          <h5>Al Burro</h5>
+          <p>Spaghetti, jamón, salami y queso asadero.</p>
+        </div>
+        <div class="item-price">$130</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ingredientes/champiñon.png" alt="Al Champiñón" class="item-img">
+        <div class="item-info">
+          <h5>Al Champiñón</h5>
+          <p>Spaghetti, mantequilla, champiñón y queso asadero.</p>
+        </div>
+        <div class="item-price">$120</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ingredientes/mantequilla.png" alt="A la Mantequilla" class="item-img">
+        <div class="item-info">
+          <h5>A la Mantequilla</h5>
+          <p>Spaghetti, mantequilla y queso asadero.</p>
+        </div>
+        <div class="item-price">$110</div>
+      </div>
+    </div>
+
+    <!-- Antipasto & Ensaladas -->
+    <div class="extra-card">
+      <h3><i class="fas fa-leaf"></i> Antipasto & Ensaladas</h3>
+      
+      <div class="menu-item">
+        <img src="ingredientes/ensalada.webp" alt="Antipasto" class="item-img">
+        <div class="item-info">
+          <h5>Antipasto</h5>
+          <p>Vegetales, carnes frías y queso seleccionado.</p>
+        </div>
+        <div class="item-price">1p $130 | 2p $180</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ingredientes/ensalada 2.png" alt="Jardinera" class="item-img">
+        <div class="item-info">
+          <h5>Jardinera</h5>
+          <p>Vegetales frescos de la estación.</p>
+        </div>
+        <div class="item-price">1p $100 | 2p $130</div>
+      </div>
+    </div>
+
+    <!-- Pedidos Especiales -->
+    <div id="pedidos-especiales" class="extra-card">
+      <h3><i class="fas fa-heart"></i> Pedidos Especiales</h3>
+      
+      <div class="menu-item">
+        <img src="ingredientes/corazon.png" alt="Pizza de Corazón Chicago" class="item-img">
+        <div class="item-info">
+          <h5>Pizza de Corazón Chicago</h5>
+          <p>Incluye 3 ingredientes de tu elección. Estilo Stuffed abundante.</p>
+        </div>
+        <div class="item-price">$380</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ingredientes/pizza-delgada.png" alt="Pizza de Corazón Thin Crust" class="item-img">
+        <div class="item-info">
+          <h5>Pizza de Corazón Thin Crust</h5>
+          <p>Incluye 3 ingredientes de tu elección. Masa crujiente delgada.</p>
+        </div>
+        <div class="item-price">$280</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- SECCIÓN: RESEÑAS -->
+    <section class="reviews-bg">
+        <div class="container" style="padding: 0 20px;">
+            <div class="section-header">
+                <span>Opiniones</span>
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="review-grid">
+                <div class="review-box">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Mucho queso, ingredientes frescos y una deliciosa salsa de tomate."</p>
+                </div>
+                <div class="review-box">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Pizzas delgadas, crujientes y con mucho queso, las pastas están deliciosas."</p>
+                </div>
+                <div class="review-box">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Excelente lugar, excelente servicio y muy rico todo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UBICACIÓN Y HORARIOS -->
+    <!-- SECCIÓN UBICACIÓN Y HORARIOS -->
+<section id="ubicacion" class="container">
+    <!-- Contenedor con las 3 tarjetas alineadas horizontalmente -->
+    <div class="info-grid">
+        <div class="info-card">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Dirección</h3>
+            <p>554-B, Boulevard Lázaro Cárdenas 554, Santa Julia, 36667 Irapuato, Gto.</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <h3>Horario</h3>
+            <p><strong>Dias abiertos:</strong><br><strong>Lunes a miércoles:</strong><br>12:00 p.m. - 8:30 p.m.<br></strong><strong>Viernes a domingo:</strong><br> 12:30 p.m. - 8:00 p.m.<br><strong>Jueves:</strong><br> Cerrado</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-phone-volume"></i>
+            <h3>Contacto</h3>
+            <p>Teléfono: 462 626 5583</p>
+        </div>
+    </div>
+
+    <!-- Mapa abajo abarcando todo el ancho -->
+    <div class="mapa-completo-card">
+      <iframe width="425" 
+      height="350" 
+      src="https://www.openstreetmap.org/export/embed?bbox=-101.35104421623025%2C20.68653245448448%2C-101.34938124664099%2C20.687696755564083&amp;layer=mapnik&amp;marker=20.68711460614105%2C-101.35021273143565" 
+      style="border: 1px solid black">
+    </iframe>
+    <br/>
+    <small><a href="https://www.openstreetmap.org/?mlat=20.687115&amp;mlon=-101.350213#map=19/20.687115/-101.350213">Ver el mapa más grande</a>
+    </small>
+    </div>
+</section>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/524621086750?text=Hola,%20quisiera%20pedir%20una%20pizza" class="float-whatsapp" target="_blank" title="Pedir por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+ <!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Luciano's Pizzería Irapuato. Todos los derechos reservados.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/lucianos.pizza/?locale=es_LA" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/lucianospizzeriairapuato/?hl=es" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@lucianospizza" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
